@@ -1,0 +1,4 @@
+- It is not SRP
+- instead of "else: ", it should be, "except: "
+- infile, the "filename" is not within quote marks and does not have .txt after it
+- It returns a number but doesn't close.
