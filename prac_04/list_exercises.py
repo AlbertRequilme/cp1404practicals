@@ -19,4 +19,17 @@ def append_to_list(numbers):
         numbers.append(get_number)
 
 
-main()
+def main2():
+    """This function will error check a string from a list."""
+    usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye', 'swei45', 'BaseInterpreterInterface',
+                 'BaseStdIn', 'Command', 'ExecState', 'InteractiveConsole', 'InterpreterInterface', 'StartServer',
+                 'bob']
+    get_username = input("Enter username: ") # Security checks does not need any .() parameters
+    while get_username not in usernames:
+        print("Access Denied.")
+        get_username = input("Enter username: ")
+    print("Access Granted.")
+
+
+# main()
+main2()
