@@ -3,7 +3,10 @@ Emails
 Estimated Time: ~35+ Minutes
 Actual Time: 41 Minutes
 """
+
+
 def main():
+    """This function will prompt the user for their email, store them, and confirm if it's correct"""
     emails_to_names = {}
     email = input("Email: ")
     while email != "":
@@ -19,6 +22,7 @@ def main():
 
 
 def extract_name_from_email(email):
+    """This function will split parts of the email to readable names"""
     name_part = email.split('@')[0]
     parts = name_part.split('.')
     name = " ".join(parts).title()
